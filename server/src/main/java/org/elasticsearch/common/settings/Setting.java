@@ -1828,7 +1828,7 @@ public class Setting<T> implements ToXContentObject {
         }
 
         AffixKey(String prefix, String suffix) {
-            assert prefix != null || suffix != null: "Either prefix or suffix must be non-null";
+            assert prefix != null: "Prefix must be non-null";
 
             this.prefix = prefix;
             if (prefix.endsWith(".") == false) {
